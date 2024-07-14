@@ -44,6 +44,8 @@ const sendProcessedData = event => {
 
   form.reset();
   localStorage.removeItem(localStorageKey);
+  formData.email = '';
+  formData.message = '';
 };
 
 form.addEventListener('input', updateFormData);
